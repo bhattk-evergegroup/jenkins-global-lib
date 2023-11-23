@@ -3,7 +3,7 @@ def call(Map config = [:]) {
         stage('Static Analysis') {
             echo 'Run the static analysis to the code'
             echo "App Name - ${config.appName}"
-            echo "IOP Assignment Group: ${config.iopAssignmentGroup}"
+            println("IOP Assignment Group: ${config.iopAssignmentGroup}")
         }
     }
 }
