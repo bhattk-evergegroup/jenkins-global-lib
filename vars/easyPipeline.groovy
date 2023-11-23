@@ -4,6 +4,7 @@ def call(Map config = [:]) {
             echo 'Run the static analysis to the code'
             echo "App Name - ${config.appName}"
             println("IOP Assignment Group: ${config.iopAssignmentGroup}")
+            println("Test Worker Count: ${config.runtimeOperations['test']['workers']}")
         }
     }
 }
